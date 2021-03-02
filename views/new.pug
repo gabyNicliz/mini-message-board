@@ -1,0 +1,12 @@
+extends layout 
+
+block content
+  div(class="container")
+    h2 Write a new message
+      form(action="/new", method="post" class="input-form")
+        input(type="messageText", name="messageText", value="", placeholder="Write your message!")
+        br
+        input(type="user", name="user", value="", placeholder="Write your user name!")
+        br
+        button(type="submit", class="button") Add New Message
+    

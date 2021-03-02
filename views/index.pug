@@ -12,5 +12,5 @@ block content
         p= message.text 
         p= message.added
   div
-    a(href=`http://localhost:${process.env.PORT || 3000}/new`)
+    a(href='/new')
       button(type="button", class="button") Add New messages
